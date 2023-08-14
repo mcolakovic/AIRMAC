@@ -1,0 +1,35 @@
+STRING_1	String	255	
+STRING_2	String	255	
+STRING_3	String	255	
+STRING_4	String	255	
+STRING_5	String	255	
+STRING_6	String	255	
+STRING_7	String	255	
+STRING_8	String	255	
+STRING_9	String	255	
+STRING_10	String	255	
+STRING_11	String	5000
+STRING_12	String	5000
+STRING_13	String	5000
+STRING_14	String	5000
+STRING_15	String	5000
+NUMBER_1	Number		
+NUMBER_2	Number		
+NUMBER_3	Number		
+NUMBER_4	Number		
+NUMBER_5	Number		
+NUMBER_6	Number		
+NUMBER_7	Number		
+NUMBER_8	Number		
+NUMBER_9	Number		
+NUMBER_10	Number		
+DATE_1	Date		
+DATE_2	Date		
+DATE_3	Date		
+DATE_4	Date		
+DATE_5	Date		
+BLOB_1	BLOB		
+BLOB_2	BLOB		
+BLOB_3	BLOB
+BLOB_4	BLOB		
+BLOB_5	BLOB		

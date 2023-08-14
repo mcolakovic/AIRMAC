@@ -1,0 +1,11 @@
+C:\ProSoft\SeminarskiRad\ObrerverPatern\bin\Debug\ObrerverPatern.dll
+C:\ProSoft\SeminarskiRad\ObrerverPatern\bin\Debug\ObrerverPatern.pdb
+C:\ProSoft\SeminarskiRad\ObrerverPatern\obj\Debug\ObrerverPatern.csprojAssemblyReference.cache
+C:\ProSoft\SeminarskiRad\ObrerverPatern\obj\Debug\ObrerverPatern.dll
+C:\ProSoft\SeminarskiRad\ObrerverPatern\obj\Debug\ObrerverPatern.pdb
+C:\Users\matij\Desktop\DiplomskiRad\ObrerverPatern\bin\Debug\ObrerverPatern.dll
+C:\Users\matij\Desktop\DiplomskiRad\ObrerverPatern\bin\Debug\ObrerverPatern.pdb
+C:\Users\matij\Desktop\DiplomskiRad\ObrerverPatern\obj\Debug\ObrerverPatern.csproj.CoreCompileInputs.cache
+C:\Users\matij\Desktop\DiplomskiRad\ObrerverPatern\obj\Debug\ObrerverPatern.dll
+C:\Users\matij\Desktop\DiplomskiRad\ObrerverPatern\obj\Debug\ObrerverPatern.pdb
+C:\Users\matij\Desktop\DiplomskiRad\ObrerverPatern\obj\Debug\ObrerverPatern.csproj.AssemblyReference.cache
