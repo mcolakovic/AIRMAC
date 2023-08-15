@@ -1,5 +1,6 @@
 ﻿using KorisnickiInterfejs.GUISession;
 using System;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -16,6 +17,29 @@ namespace KorisnickiInterfejs.Forms
         private void FrmMain_Load(object sender, EventArgs e)
         {
             IsMdiContainer = true;
+            this.Resize += MainForm_Resize;
+        }
+
+        private void MainForm_Resize(object sender, EventArgs e)
+        {
+            this.CenterToScreen();
+
+            Image backgroundImage = Properties.Resources.airmac_bcg;
+            float widthScale = (float)this.Width / 1920;
+            float heightScale = (float)this.Height / 1080;
+
+            int newWidth = (int)(1920 * widthScale);
+            int newHeight = (int)(1080 * heightScale);
+
+            int x = (this.Width - newWidth) / 2;
+            int y = (this.Height - newHeight) / 2;
+
+            Bitmap scaledBackground = new Bitmap(newWidth, newHeight);
+            Graphics graphics = Graphics.FromImage(scaledBackground);
+            
+            graphics.DrawImage(backgroundImage, new Rectangle(x, y, newWidth, newHeight), new Rectangle(0, 0, backgroundImage.Width, backgroundImage.Height), GraphicsUnit.Pixel);
+
+            this.BackgroundImage = scaledBackground;
         }
 
         private void addFlightToLogBookToolStripMenuItem_Click(object sender, EventArgs e)

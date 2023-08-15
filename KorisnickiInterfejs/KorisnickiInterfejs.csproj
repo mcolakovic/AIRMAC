@@ -395,5 +395,8 @@
   <ItemGroup>
     <None Include="Resources\Add1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airmac_bcg.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
