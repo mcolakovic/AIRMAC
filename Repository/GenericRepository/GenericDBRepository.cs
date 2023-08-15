@@ -76,7 +76,6 @@ namespace Repository.GenericRepository
             SqlCommand command = broker.CreateCommand();
             command.CommandText = $"UPDATE {t.TableName[t.TableNameIndex]} SET {t.UpdateValues} WHERE {t.Condition[t.ConditionIndex]}";
             command.ExecuteNonQuery();
-
         }
     }
 }

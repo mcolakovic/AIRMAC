@@ -24,8 +24,6 @@ namespace SystemOperation.SO
             {
                 throw new SystemOperationException("Sistem ne može da pronađe podatke o avionu i aerodromima!");
             }
-
-           
         }
     }
 }
