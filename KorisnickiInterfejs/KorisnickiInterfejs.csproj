@@ -398,5 +398,11 @@
   <ItemGroup>
     <None Include="Resources\airmac_bcg.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airmac_bcg_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airmac_bcg_2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

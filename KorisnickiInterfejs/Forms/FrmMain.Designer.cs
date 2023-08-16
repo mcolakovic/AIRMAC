@@ -63,7 +63,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1025, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1025, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -88,98 +88,98 @@
             this.rotablePartHistoryToolStripMenuItem});
             this.logBookToolStripMenuItem.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logBookToolStripMenuItem.Name = "logBookToolStripMenuItem";
-            this.logBookToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.logBookToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.logBookToolStripMenuItem.Text = "LogBook";
             // 
             // aircraftSettingsToolStripMenuItem
             // 
             this.aircraftSettingsToolStripMenuItem.Name = "aircraftSettingsToolStripMenuItem";
-            this.aircraftSettingsToolStripMenuItem.Size = new System.Drawing.Size(284, 22);
+            this.aircraftSettingsToolStripMenuItem.Size = new System.Drawing.Size(362, 26);
             this.aircraftSettingsToolStripMenuItem.Text = "Aircraft Settings";
             this.aircraftSettingsToolStripMenuItem.Click += new System.EventHandler(this.aircraftSettingsToolStripMenuItem_Click);
             // 
             // addFlightToLogBookToolStripMenuItem
             // 
             this.addFlightToLogBookToolStripMenuItem.Name = "addFlightToLogBookToolStripMenuItem";
-            this.addFlightToLogBookToolStripMenuItem.Size = new System.Drawing.Size(284, 22);
+            this.addFlightToLogBookToolStripMenuItem.Size = new System.Drawing.Size(362, 26);
             this.addFlightToLogBookToolStripMenuItem.Text = "Add Flight to LogBook";
             this.addFlightToLogBookToolStripMenuItem.Click += new System.EventHandler(this.addFlightToLogBookToolStripMenuItem_Click);
             // 
             // flightsReviewToolStripMenuItem
             // 
             this.flightsReviewToolStripMenuItem.Name = "flightsReviewToolStripMenuItem";
-            this.flightsReviewToolStripMenuItem.Size = new System.Drawing.Size(284, 22);
+            this.flightsReviewToolStripMenuItem.Size = new System.Drawing.Size(362, 26);
             this.flightsReviewToolStripMenuItem.Text = "Flights Review";
             this.flightsReviewToolStripMenuItem.Click += new System.EventHandler(this.flightsReviewToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(281, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(359, 6);
             // 
             // rotablePartCardToolStripMenuItem
             // 
             this.rotablePartCardToolStripMenuItem.Name = "rotablePartCardToolStripMenuItem";
-            this.rotablePartCardToolStripMenuItem.Size = new System.Drawing.Size(284, 22);
+            this.rotablePartCardToolStripMenuItem.Size = new System.Drawing.Size(362, 26);
             this.rotablePartCardToolStripMenuItem.Text = "Rotable Part Card";
             this.rotablePartCardToolStripMenuItem.Click += new System.EventHandler(this.rotablePartCardToolStripMenuItem_Click);
             // 
             // changeRotablePartsToolStripMenuItem
             // 
             this.changeRotablePartsToolStripMenuItem.Name = "changeRotablePartsToolStripMenuItem";
-            this.changeRotablePartsToolStripMenuItem.Size = new System.Drawing.Size(284, 22);
+            this.changeRotablePartsToolStripMenuItem.Size = new System.Drawing.Size(362, 26);
             this.changeRotablePartsToolStripMenuItem.Text = "Change Rotable Parts";
             this.changeRotablePartsToolStripMenuItem.Click += new System.EventHandler(this.changeRotablePartsToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(281, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(359, 6);
             // 
             // addComponentToAircraftToolStripMenuItem
             // 
             this.addComponentToAircraftToolStripMenuItem.Name = "addComponentToAircraftToolStripMenuItem";
-            this.addComponentToAircraftToolStripMenuItem.Size = new System.Drawing.Size(284, 22);
+            this.addComponentToAircraftToolStripMenuItem.Size = new System.Drawing.Size(362, 26);
             this.addComponentToAircraftToolStripMenuItem.Text = "Add Component to Aircraft";
             this.addComponentToAircraftToolStripMenuItem.Click += new System.EventHandler(this.addComponentToAircraftToolStripMenuItem_Click);
             // 
             // removeComponentFromAircraftToolStripMenuItem
             // 
             this.removeComponentFromAircraftToolStripMenuItem.Name = "removeComponentFromAircraftToolStripMenuItem";
-            this.removeComponentFromAircraftToolStripMenuItem.Size = new System.Drawing.Size(284, 22);
+            this.removeComponentFromAircraftToolStripMenuItem.Size = new System.Drawing.Size(362, 26);
             this.removeComponentFromAircraftToolStripMenuItem.Text = "Remove Component from Aircraft";
             this.removeComponentFromAircraftToolStripMenuItem.Click += new System.EventHandler(this.removeComponentFromAircraftToolStripMenuItem_Click);
             // 
             // sendComponentToServiceToolStripMenuItem
             // 
             this.sendComponentToServiceToolStripMenuItem.Name = "sendComponentToServiceToolStripMenuItem";
-            this.sendComponentToServiceToolStripMenuItem.Size = new System.Drawing.Size(284, 22);
+            this.sendComponentToServiceToolStripMenuItem.Size = new System.Drawing.Size(362, 26);
             this.sendComponentToServiceToolStripMenuItem.Text = "Send Component To Service";
             this.sendComponentToServiceToolStripMenuItem.Click += new System.EventHandler(this.sendComponentToServiceToolStripMenuItem_Click);
             // 
             // serviceInspectionToolStripMenuItem
             // 
             this.serviceInspectionToolStripMenuItem.Name = "serviceInspectionToolStripMenuItem";
-            this.serviceInspectionToolStripMenuItem.Size = new System.Drawing.Size(284, 22);
+            this.serviceInspectionToolStripMenuItem.Size = new System.Drawing.Size(362, 26);
             this.serviceInspectionToolStripMenuItem.Text = "Service Inspection";
             this.serviceInspectionToolStripMenuItem.Click += new System.EventHandler(this.serviceInspectionToolStripMenuItem_Click);
             // 
             // returnToStockToolStripMenuItem
             // 
             this.returnToStockToolStripMenuItem.Name = "returnToStockToolStripMenuItem";
-            this.returnToStockToolStripMenuItem.Size = new System.Drawing.Size(284, 22);
+            this.returnToStockToolStripMenuItem.Size = new System.Drawing.Size(362, 26);
             this.returnToStockToolStripMenuItem.Text = "Return to Stock";
             this.returnToStockToolStripMenuItem.Click += new System.EventHandler(this.returnToStockToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(281, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(359, 6);
             // 
             // resourceAvailabilityToolStripMenuItem
             // 
             this.resourceAvailabilityToolStripMenuItem.Name = "resourceAvailabilityToolStripMenuItem";
-            this.resourceAvailabilityToolStripMenuItem.Size = new System.Drawing.Size(284, 22);
+            this.resourceAvailabilityToolStripMenuItem.Size = new System.Drawing.Size(362, 26);
             this.resourceAvailabilityToolStripMenuItem.Text = "Resource Availability";
             this.resourceAvailabilityToolStripMenuItem.Click += new System.EventHandler(this.resourceAvailabilityToolStripMenuItem_Click);
             // 
@@ -190,34 +190,34 @@
             this.cyclesRemainingReportToolStripMenuItem,
             this.daysRemainingReportToolStripMenuItem});
             this.remainingReportsToolStripMenuItem.Name = "remainingReportsToolStripMenuItem";
-            this.remainingReportsToolStripMenuItem.Size = new System.Drawing.Size(284, 22);
+            this.remainingReportsToolStripMenuItem.Size = new System.Drawing.Size(362, 26);
             this.remainingReportsToolStripMenuItem.Text = "Remaining Reports";
             // 
             // hoursRemainingReportToolStripMenuItem
             // 
             this.hoursRemainingReportToolStripMenuItem.Name = "hoursRemainingReportToolStripMenuItem";
-            this.hoursRemainingReportToolStripMenuItem.Size = new System.Drawing.Size(235, 22);
+            this.hoursRemainingReportToolStripMenuItem.Size = new System.Drawing.Size(299, 26);
             this.hoursRemainingReportToolStripMenuItem.Text = "Hours Remaining Report";
             this.hoursRemainingReportToolStripMenuItem.Click += new System.EventHandler(this.hoursRemainingReportToolStripMenuItem_Click);
             // 
             // cyclesRemainingReportToolStripMenuItem
             // 
             this.cyclesRemainingReportToolStripMenuItem.Name = "cyclesRemainingReportToolStripMenuItem";
-            this.cyclesRemainingReportToolStripMenuItem.Size = new System.Drawing.Size(235, 22);
+            this.cyclesRemainingReportToolStripMenuItem.Size = new System.Drawing.Size(299, 26);
             this.cyclesRemainingReportToolStripMenuItem.Text = "Cycles Remaining Report";
             this.cyclesRemainingReportToolStripMenuItem.Click += new System.EventHandler(this.cyclesRemainingReportToolStripMenuItem_Click);
             // 
             // daysRemainingReportToolStripMenuItem
             // 
             this.daysRemainingReportToolStripMenuItem.Name = "daysRemainingReportToolStripMenuItem";
-            this.daysRemainingReportToolStripMenuItem.Size = new System.Drawing.Size(235, 22);
+            this.daysRemainingReportToolStripMenuItem.Size = new System.Drawing.Size(299, 26);
             this.daysRemainingReportToolStripMenuItem.Text = "Days Remaining Report";
             this.daysRemainingReportToolStripMenuItem.Click += new System.EventHandler(this.daysRemainingReportToolStripMenuItem_Click);
             // 
             // rotablePartHistoryToolStripMenuItem
             // 
             this.rotablePartHistoryToolStripMenuItem.Name = "rotablePartHistoryToolStripMenuItem";
-            this.rotablePartHistoryToolStripMenuItem.Size = new System.Drawing.Size(284, 22);
+            this.rotablePartHistoryToolStripMenuItem.Size = new System.Drawing.Size(362, 26);
             this.rotablePartHistoryToolStripMenuItem.Text = "Rotable Part History";
             this.rotablePartHistoryToolStripMenuItem.Click += new System.EventHandler(this.rotablePartHistoryToolStripMenuItem_Click);
             // 
@@ -225,7 +225,7 @@
             // 
             this.exitApplicationToolStripMenuItem.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitApplicationToolStripMenuItem.Name = "exitApplicationToolStripMenuItem";
-            this.exitApplicationToolStripMenuItem.Size = new System.Drawing.Size(131, 20);
+            this.exitApplicationToolStripMenuItem.Size = new System.Drawing.Size(167, 24);
             this.exitApplicationToolStripMenuItem.Text = "Exit Application";
             this.exitApplicationToolStripMenuItem.Click += new System.EventHandler(this.exitApplicationToolStripMenuItem_Click);
             // 
@@ -233,7 +233,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.BackgroundImage = global::KorisnickiInterfejs.Properties.Resources.airmac_bcg;
+            this.BackgroundImage = global::KorisnickiInterfejs.Properties.Resources.airmac_bcg_2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1025, 588);
             this.Controls.Add(this.menuStrip1);
