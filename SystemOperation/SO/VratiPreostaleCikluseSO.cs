@@ -25,7 +25,7 @@ namespace SystemOperation.SO
             {
                 Result = repository.SearchAll(remainingCycles).OfType<RemainingCycles>().ToList();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da pronađe podatke o preostalim resursima");
             }

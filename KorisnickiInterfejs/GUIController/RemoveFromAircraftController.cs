@@ -16,9 +16,7 @@ namespace KorisnickiInterfejs.GUIController
     public class RemoveFromAircraftController
     {
         FrmRemoveFromAircraft frmRemoveFromAircraft;
-        Decimal id_RotablePartsLog;
         Decimal id_RotableParts;
-        bool IsInit = true;
 
         internal void InitData(FrmRemoveFromAircraft frmRemoveFromAircraft)
         {
@@ -29,7 +27,6 @@ namespace KorisnickiInterfejs.GUIController
                 frmRemoveFromAircraft.DpLastUpdate.CustomFormat = " ";
                 frmRemoveFromAircraft.DpInstalationDate.CustomFormat = " ";
                 frmRemoveFromAircraft.CbAircraft.SelectedIndex = -1;
-                IsInit = false;
             }
 
             catch (ServerCommunicationException)
@@ -152,18 +149,6 @@ namespace KorisnickiInterfejs.GUIController
                         CyclesSinceOverhaul = String.IsNullOrEmpty(frmRemoveFromAircraft.TxtCyclesSinceOverhaul.Text) ? (decimal?)null : decimal.Parse(frmRemoveFromAircraft.TxtCyclesSinceOverhaul.Text),
                         DaysSinceOverhaul = String.IsNullOrEmpty(frmRemoveFromAircraft.TxtDaysSinceOverhaul.Text) ? (decimal?)null : decimal.Parse(frmRemoveFromAircraft.TxtDaysSinceOverhaul.Text),
                         ExpireAtDate = String.IsNullOrEmpty(frmRemoveFromAircraft.TxtStorageLimit.Text) ? (DateTime?)null : DateTime.Parse(frmRemoveFromAircraft.DpLastUpdate.Text).AddDays(double.Parse(frmRemoveFromAircraft.TxtStorageLimit.Text)),
-                        
-                        //HoursOperationalLimit = decimal.Parse(frmRemoveFromAircraft.TxtHoursOperationalLimit.Text),
-                        //CyclesOperationalLimit = decimal.Parse(frmRemoveFromAircraft.TxtCyclesOperationalLimit.Text),
-                        //DaysOperationalLimit = decimal.Parse(frmRemoveFromAircraft.TxtDaysOperationalLimit.Text),
-                        //StorageLimit = decimal.Parse(frmRemoveFromAircraft.TxtStorageLimit.Text),
-                        //TimeSinceNew = Functions.hours_add(decimal.Parse(frmRemoveFromAircraft.TxtTimeSinceNew.Text), Functions.hours_sub(decimal.Parse(frmRemoveFromAircraft.TxtLastACHours.Text), decimal.Parse(frmRemoveFromAircraft.TxtACHoursOnInstall.Text))),
-                        //CyclesSinceNew = decimal.Parse(frmRemoveFromAircraft.TxtCyclesSinceNew.Text) + decimal.Parse(frmRemoveFromAircraft.TxtLastACCycles.Text) - decimal.Parse(frmRemoveFromAircraft.TxtACCyclesOnInstall.Text),               
-                        //DaysSinceNew = decimal.Parse(frmRemoveFromAircraft.TxtDaysSinceNew.Text) + (Decimal)((DateTime.Parse(DateTime.Parse(frmRemoveFromAircraft.DpLastUpdate.Text).ToString("dd/MM/yyyy")) - DateTime.Parse(frmRemoveFromAircraft.DpInstalationDate.Text)).TotalDays),
-                        //TimeSinceOverhaul = Functions.hours_add(decimal.Parse(frmRemoveFromAircraft.TxtTimeSinceOverhaul.Text), Functions.hours_sub(decimal.Parse(frmRemoveFromAircraft.TxtLastACHours.Text), decimal.Parse(frmRemoveFromAircraft.TxtACHoursOnInstall.Text))),
-                        //CyclesSinceOverhaul = decimal.Parse(frmRemoveFromAircraft.TxtCyclesSinceOverhaul.Text) + decimal.Parse(frmRemoveFromAircraft.TxtLastACCycles.Text) - decimal.Parse(frmRemoveFromAircraft.TxtACCyclesOnInstall.Text),
-                        //DaysSinceOverhaul = decimal.Parse(frmRemoveFromAircraft.TxtDaysSinceOverhaul.Text) + (Decimal)((DateTime.Parse(DateTime.Parse(frmRemoveFromAircraft.DpLastUpdate.Text).ToString("dd/MM/yyyy")) - DateTime.Parse(frmRemoveFromAircraft.DpInstalationDate.Text)).TotalDays),
-                        //ExpireAtDate = DateTime.Parse(frmRemoveFromAircraft.DpLastUpdate.Text).AddDays(double.Parse(frmRemoveFromAircraft.TxtStorageLimit.Text)),
                         IsInitial = false,
                         TableNameIndex = 1,                
                     }

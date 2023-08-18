@@ -50,9 +50,9 @@
     <Compile Include="SQLTable\tblLogBook.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ObrerverPatern\ObrerverPatern.csproj">
+    <ProjectReference Include="..\ObserverPatern\ObserverPatern.csproj">
       <Project>{c8e38189-42f4-4dc6-b440-057800282647}</Project>
-      <Name>ObrerverPatern</Name>
+      <Name>ObserverPatern</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

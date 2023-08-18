@@ -22,7 +22,7 @@ namespace SystemOperation.SO
             {
                 Result = (RotableParts)repository.SearchOne(rotableParts);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da pronađe karton avionskog dijela u evidenciji avio djelova!");
             }

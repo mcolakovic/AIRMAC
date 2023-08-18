@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLDependency", "SQLDependency\SQLDependency.csproj", "{07727135-C4E7-4861-A50D-7E50D9F2B340}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObrerverPatern", "ObrerverPatern\ObrerverPatern.csproj", "{C8E38189-42F4-4DC6-B440-057800282647}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverPatern", "ObserverPatern\ObserverPatern.csproj", "{C8E38189-42F4-4DC6-B440-057800282647}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

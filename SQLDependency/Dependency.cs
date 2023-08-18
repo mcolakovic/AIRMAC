@@ -56,7 +56,7 @@ namespace SQLDependency
 
         private void tblLogBook_dependency_Changed(object sender, RecordChangedEventArgs<tblLogBook> e)
         {
-            ObrerverPatern.Objects.ServerObject.Notify();
+            ObserverPatern.Objects.ServerObject.Notify();
         }
     }
 }

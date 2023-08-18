@@ -27,7 +27,7 @@ namespace SystemOperation.SO
                 }
                 Result = true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da prebaci dio u magacin servisiranih avionskih dijelova!");
             }

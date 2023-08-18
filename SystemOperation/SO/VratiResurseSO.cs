@@ -22,7 +22,7 @@ namespace SystemOperation.SO
             {
                 Result = repository.SearchAll(resourceAvailability).OfType<ResourceAvailability>().ToList();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da pronađe podatke o preostalim resursima");
             }

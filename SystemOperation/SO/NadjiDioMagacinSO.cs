@@ -29,7 +29,7 @@ namespace SystemOperation.SO
                 else
                 Result = rotablePartsLog;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da pronađe avionski dio u magacinu avionskih dijelova!");
             }

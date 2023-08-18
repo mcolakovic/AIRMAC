@@ -28,7 +28,7 @@ namespace KorisnickiInterfejs.Forms
             }));
          }
 
-        private void btnFlightSearch_Click(object sender, System.EventArgs e)
+        private void btnFlightSearch_Click(object sender, EventArgs e)
         {
             try
             {

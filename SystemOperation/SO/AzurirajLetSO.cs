@@ -28,7 +28,7 @@ namespace SystemOperation.SO
                 
                 Result = true;
             }
-            catch (Exception ex )
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da sačuva ažurirane podatke o realizovanom letu!");
             }

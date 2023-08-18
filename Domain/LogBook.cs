@@ -22,7 +22,7 @@ namespace Domain
         public Decimal PreviousACCycles { get; set; }
         public Decimal NextACHours { get; set; }
         public Decimal NextACCycles { get; set; }
- 
+
         public List<string> TableName => new List<string> { "LogBook" };
         private int _TableNameIndex;
         public int TableNameIndex { get => _TableNameIndex; set => _TableNameIndex = value; }
@@ -41,6 +41,7 @@ namespace Domain
         public string UpdateValues => $"FlightNumber = '{FlightNumber}', FlightTimeStart = convert(datetime, '{FlightTimeStart.ToString("yyyyMMdd HH:mm:ss")}', 103), FlightTimeStop = convert(datetime, '{FlightTimeStop.ToString("yyyyMMdd HH:mm:ss")}', 103)";
 
         public string SelectOrderBy => "ID_LogBook DESC";
+
 
         public List<IDomainObject> ReadMultipleRow(SqlDataReader reader)
         {

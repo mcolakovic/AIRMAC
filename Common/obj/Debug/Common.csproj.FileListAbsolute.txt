@@ -8,3 +8,4 @@ C:\Users\matij\Desktop\DiplomskiRad\Common\bin\Debug\Common.pdb
 C:\Users\matij\Desktop\DiplomskiRad\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\matij\Desktop\DiplomskiRad\Common\obj\Debug\Common.dll
 C:\Users\matij\Desktop\DiplomskiRad\Common\obj\Debug\Common.pdb
+C:\Users\matij\Desktop\DiplomskiRad\Common\obj\Debug\Common.csproj.AssemblyReference.cache

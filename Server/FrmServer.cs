@@ -61,7 +61,7 @@ namespace Server
                 Thread serverNit = new Thread(server.HandleClients);
                 serverNit.Start();
             }
-            catch (SocketException ex)
+            catch (SocketException)
             {
                 MessageBox.Show("Server ne moze da se pokrene!", "System Operation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
             }

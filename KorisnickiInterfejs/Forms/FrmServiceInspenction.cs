@@ -41,7 +41,7 @@ namespace KorisnickiInterfejs.Forms
             {
                 throw new ServerCommunicationException("Veza sa serverom ne postoji!");
             }
-            catch (SystemOperationException ex)
+            catch (SystemOperationException)
             {
                 this.Dispose();
             }

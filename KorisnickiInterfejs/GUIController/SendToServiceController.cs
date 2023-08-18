@@ -14,7 +14,6 @@ namespace KorisnickiInterfejs.GUIController
     public class SendToServiceController
     {
         FrmSendToService frmSendToService;
-        Decimal id_RotablePartsLog;
         Decimal id_RotableParts;
 
         internal void InitData(FrmSendToService frmSendToService)
@@ -73,18 +72,6 @@ namespace KorisnickiInterfejs.GUIController
                         TimeSinceOverhaul = String.IsNullOrEmpty(frmSendToService.TxtTimeSinceOverhaul.Text) ? (decimal?)null : decimal.Parse(frmSendToService.TxtTimeSinceOverhaul.Text),
                         CyclesSinceOverhaul = String.IsNullOrEmpty(frmSendToService.TxtCyclesSinceOverhaul.Text) ? (decimal?)null : decimal.Parse(frmSendToService.TxtCyclesSinceOverhaul.Text),
                         DaysSinceOverhaul = String.IsNullOrEmpty(frmSendToService.TxtDaysSinceOverhaul.Text) ? (decimal?)null : decimal.Parse(frmSendToService.TxtDaysSinceOverhaul.Text),
-                       
-
-                        //HoursOperationalLimit = decimal.Parse(frmSendToService.TxtHoursOperationalLimit.Text),
-                        //CyclesOperationalLimit = decimal.Parse(frmSendToService.TxtCyclesOperationalLimit.Text),
-                        //DaysOperationalLimit = decimal.Parse(frmSendToService.TxtDaysOperationalLimit.Text),
-                        //StorageLimit = decimal.Parse(frmSendToService.TxtStorageLimit.Text),
-                        //TimeSinceNew = decimal.Parse(frmSendToService.TxtTimeSinceNew.Text),
-                        //CyclesSinceNew = decimal.Parse(frmSendToService.TxtCyclesSinceNew.Text),
-                        //DaysSinceNew = decimal.Parse(frmSendToService.TxtDaysSinceNew.Text),
-                        //TimeSinceOverhaul = decimal.Parse(frmSendToService.TxtTimeSinceOverhaul.Text),
-                        //CyclesSinceOverhaul = decimal.Parse(frmSendToService.TxtCyclesSinceOverhaul.Text),
-                        //DaysSinceOverhaul = decimal.Parse(frmSendToService.TxtDaysSinceOverhaul.Text),
                         TableNameIndex = 1
                     }
                 };

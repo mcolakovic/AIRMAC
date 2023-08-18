@@ -112,9 +112,9 @@
       <Project>{a3380266-c38f-48b9-b963-8b91468c34cc}</Project>
       <Name>Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ObrerverPatern\ObrerverPatern.csproj">
+    <ProjectReference Include="..\ObserverPatern\ObserverPatern.csproj">
       <Project>{c8e38189-42f4-4dc6-b440-057800282647}</Project>
-      <Name>ObrerverPatern</Name>
+      <Name>ObserverPatern</Name>
     </ProjectReference>
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{20CD0125-E1E3-44A7-A015-EC030563D609}</Project>

@@ -47,7 +47,6 @@ C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\Server.pdb
 C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\ApplicationLogic.dll
 C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\Common.dll
 C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\Domain.dll
-C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\ObrerverPatern.dll
 C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\Repository.dll
 C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\SQLDependency.dll
 C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\SystemOperation.dll
@@ -72,7 +71,6 @@ C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\ApplicationLogic.pdb
 C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\Common.pdb
 C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\Domain.pdb
 C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\Domain.dll.config
-C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\ObrerverPatern.pdb
 C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\Repository.pdb
 C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\SQLDependency.pdb
 C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\SystemOperation.pdb
@@ -85,3 +83,5 @@ C:\Users\matij\Desktop\DiplomskiRad\Server\obj\Debug\Server.csproj.CoreCompileIn
 C:\Users\matij\Desktop\DiplomskiRad\Server\obj\Debug\Server.csproj.CopyComplete
 C:\Users\matij\Desktop\DiplomskiRad\Server\obj\Debug\Server.exe
 C:\Users\matij\Desktop\DiplomskiRad\Server\obj\Debug\Server.pdb
+C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\ObserverPatern.dll
+C:\Users\matij\Desktop\DiplomskiRad\Server\bin\Debug\ObserverPatern.pdb

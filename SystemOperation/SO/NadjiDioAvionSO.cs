@@ -28,7 +28,7 @@ namespace SystemOperation.SO
                 else
                     Result = rotablePartsLog;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da pronađe podatke o instaliranom dijelu!");
             }

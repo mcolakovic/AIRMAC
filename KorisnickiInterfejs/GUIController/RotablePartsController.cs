@@ -64,7 +64,7 @@ namespace KorisnickiInterfejs.GUIController
                 MessageBox.Show("Sistem ne može da nađe karton dijela u evidenciji avio dijelova!", "System Operation Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
                 throw new ServerCommunicationException("Veza sa serverom ne postoji!");
             }
-            catch (SystemOperationException ex)
+            catch (SystemOperationException)
             {
                 MessageBox.Show("Sistem je spreman za unos kartona avionskog dijela!", "System Operation is successful", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
                 rotableParts.BtnAddRotablePartsItem.Enabled = true;

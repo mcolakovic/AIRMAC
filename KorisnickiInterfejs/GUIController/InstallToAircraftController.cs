@@ -16,7 +16,6 @@ namespace KorisnickiInterfejs.GUIController
     public class InstallToAircraftController
     {
         FrmInstallToAircraft frmInstallToAircraft;
-        Decimal id_RotablePartsLog;
         Decimal id_RotableParts;
         bool IsInit = true;
 
@@ -123,21 +122,6 @@ namespace KorisnickiInterfejs.GUIController
                         ExpireOnHours = String.IsNullOrEmpty(frmInstallToAircraft.TxtHoursOperationalLimit.Text) ? (decimal?)null : Functions.hours_add(((Aircraft)frmInstallToAircraft.CbAircraft.SelectedItem).LastACHours, Functions.hours_sub(decimal.Parse(frmInstallToAircraft.TxtHoursOperationalLimit.Text), decimal.Parse(frmInstallToAircraft.TxtTimeSinceOverhaul.Text))),
                         ExpireOnCycles = String.IsNullOrEmpty(frmInstallToAircraft.TxtCyclesOperationalLimit.Text) ? (decimal?)null : ((Aircraft)frmInstallToAircraft.CbAircraft.SelectedItem).LastACCycles + decimal.Parse(frmInstallToAircraft.TxtCyclesOperationalLimit.Text) - decimal.Parse(frmInstallToAircraft.TxtCyclesSinceOverhaul.Text),
                         ExpireAtDate = String.IsNullOrEmpty(frmInstallToAircraft.TxtDaysOperationalLimit.Text) ? (DateTime?)null : ((Aircraft)frmInstallToAircraft.CbAircraft.SelectedItem).LastUpdate.AddDays(int.Parse(frmInstallToAircraft.TxtDaysOperationalLimit.Text) - int.Parse(frmInstallToAircraft.TxtDaysSinceOverhaul.Text)),
-
-                        //HoursOperationalLimit = frmInstallToAircraft.TxtHoursOperationalLimit.Text == "" ? decimal.Parse(frmInstallToAircraft.TxtHoursOperationalLimit.Text) : (decimal?)null,
-                        //CyclesOperationalLimit = decimal.Parse(frmInstallToAircraft.TxtCyclesOperationalLimit.Text),
-                        //DaysOperationalLimit = decimal.Parse(frmInstallToAircraft.TxtDaysOperationalLimit.Text),
-                        //StorageLimit = decimal.Parse(frmInstallToAircraft.TxtStorageLimit.Text),
-                        //TimeSinceNew = decimal.Parse(frmInstallToAircraft.TxtTimeSinceNew.Text),
-                        //CyclesSinceNew = decimal.Parse(frmInstallToAircraft.TxtCyclesSinceNew.Text),
-                        //DaysSinceNew = decimal.Parse(frmInstallToAircraft.TxtDaysSinceNew.Text),
-                        //TimeSinceOverhaul = decimal.Parse(frmInstallToAircraft.TxtTimeSinceOverhaul.Text),
-                        //CyclesSinceOverhaul = decimal.Parse(frmInstallToAircraft.TxtCyclesSinceOverhaul.Text),
-                        //DaysSinceOverhaul = decimal.Parse(frmInstallToAircraft.TxtDaysSinceOverhaul.Text),
-                        //ExpireOnHours = Functions.hours_add(((Aircraft)frmInstallToAircraft.CbAircraft.SelectedItem).LastACHours, Functions.hours_sub(decimal.Parse(frmInstallToAircraft.TxtHoursOperationalLimit.Text), decimal.Parse(frmInstallToAircraft.TxtTimeSinceOverhaul.Text))),
-                        //ExpireOnCycles = ((Aircraft)frmInstallToAircraft.CbAircraft.SelectedItem).LastACCycles + decimal.Parse(frmInstallToAircraft.TxtCyclesOperationalLimit.Text) - decimal.Parse(frmInstallToAircraft.TxtCyclesSinceOverhaul.Text),
-                        //ExpireAtDate = ((Aircraft)frmInstallToAircraft.CbAircraft.SelectedItem).LastUpdate.AddDays(int.Parse(frmInstallToAircraft.TxtDaysOperationalLimit.Text) - int.Parse(frmInstallToAircraft.TxtDaysSinceOverhaul.Text)),
-                        
                         TableNameIndex = 1
                     }
                 };

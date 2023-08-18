@@ -23,7 +23,7 @@ namespace SystemOperation.SO
             {
                 Result = (LogBook)repository.SearchOne(logbook);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da nađe podatke o konkretnom letu!");
             }

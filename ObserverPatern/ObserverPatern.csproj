@@ -7,8 +7,8 @@
     <ProjectGuid>{C8E38189-42F4-4DC6-B440-057800282647}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ObrerverPatern</RootNamespace>
-    <AssemblyName>ObrerverPatern</AssemblyName>
+    <RootNamespace>ObserverPatern</RootNamespace>
+    <AssemblyName>ObserverPatern</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

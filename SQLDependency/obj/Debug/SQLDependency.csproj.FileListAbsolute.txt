@@ -9,10 +9,10 @@ C:\ProSoft\SeminarskiRad\SQLDependency\bin\Debug\ObrerverPatern.dll
 C:\ProSoft\SeminarskiRad\SQLDependency\bin\Debug\ObrerverPatern.pdb
 C:\Users\matij\Desktop\DiplomskiRad\SQLDependency\bin\Debug\SQLDependency.dll
 C:\Users\matij\Desktop\DiplomskiRad\SQLDependency\bin\Debug\SQLDependency.pdb
-C:\Users\matij\Desktop\DiplomskiRad\SQLDependency\bin\Debug\ObrerverPatern.dll
-C:\Users\matij\Desktop\DiplomskiRad\SQLDependency\bin\Debug\ObrerverPatern.pdb
 C:\Users\matij\Desktop\DiplomskiRad\SQLDependency\obj\Debug\SQLDependency.csproj.AssemblyReference.cache
 C:\Users\matij\Desktop\DiplomskiRad\SQLDependency\obj\Debug\SQLDependency.csproj.CoreCompileInputs.cache
 C:\Users\matij\Desktop\DiplomskiRad\SQLDependency\obj\Debug\SQLDependency.csproj.CopyComplete
 C:\Users\matij\Desktop\DiplomskiRad\SQLDependency\obj\Debug\SQLDependency.dll
 C:\Users\matij\Desktop\DiplomskiRad\SQLDependency\obj\Debug\SQLDependency.pdb
+C:\Users\matij\Desktop\DiplomskiRad\SQLDependency\bin\Debug\ObserverPatern.dll
+C:\Users\matij\Desktop\DiplomskiRad\SQLDependency\bin\Debug\ObserverPatern.pdb

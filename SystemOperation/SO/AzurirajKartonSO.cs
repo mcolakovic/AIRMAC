@@ -29,7 +29,7 @@ namespace SystemOperation.SO
                 Result = true;
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da sačuva karton dijela u evidenciji avio dijelova!");
             }

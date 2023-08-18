@@ -23,11 +23,6 @@ C:\ProSoft\SeminarskiRad\Domain\obj\Debug\Domain.csproj.CopyComplete
 C:\Users\matij\Desktop\DiplomskiRad\Domain\bin\Debug\Domain.dll.config
 C:\Users\matij\Desktop\DiplomskiRad\Domain\bin\Debug\Domain.dll
 C:\Users\matij\Desktop\DiplomskiRad\Domain\bin\Debug\Domain.pdb
-C:\Users\matij\Desktop\DiplomskiRad\Domain\bin\Debug\stdole.dll
-C:\Users\matij\Desktop\DiplomskiRad\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
-C:\Users\matij\Desktop\DiplomskiRad\Domain\obj\Debug\Domain.csproj.CopyComplete
-C:\Users\matij\Desktop\DiplomskiRad\Domain\obj\Debug\Domain.dll
-C:\Users\matij\Desktop\DiplomskiRad\Domain\obj\Debug\Domain.pdb
 C:\Users\matij\Desktop\DiplomskiRad\Domain\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 C:\Users\matij\Desktop\DiplomskiRad\Domain\bin\Debug\CrystalDecisions.Shared.dll
 C:\Users\matij\Desktop\DiplomskiRad\Domain\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
@@ -42,4 +37,9 @@ C:\Users\matij\Desktop\DiplomskiRad\Domain\bin\Debug\CrystalDecisions.ReportAppS
 C:\Users\matij\Desktop\DiplomskiRad\Domain\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
 C:\Users\matij\Desktop\DiplomskiRad\Domain\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Users\matij\Desktop\DiplomskiRad\Domain\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\matij\Desktop\DiplomskiRad\Domain\bin\Debug\stdole.dll
 C:\Users\matij\Desktop\DiplomskiRad\Domain\obj\Debug\Domain.csproj.AssemblyReference.cache
+C:\Users\matij\Desktop\DiplomskiRad\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+C:\Users\matij\Desktop\DiplomskiRad\Domain\obj\Debug\Domain.csproj.CopyComplete
+C:\Users\matij\Desktop\DiplomskiRad\Domain\obj\Debug\Domain.dll
+C:\Users\matij\Desktop\DiplomskiRad\Domain\obj\Debug\Domain.pdb

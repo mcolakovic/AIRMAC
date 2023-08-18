@@ -23,7 +23,7 @@ namespace SystemOperation.SO
             {
                 Result = repository.SearchAll(logbook).OfType<LogBook>().ToList();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da pronađe podatke o realizovanim letovima!");
             }

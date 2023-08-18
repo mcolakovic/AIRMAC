@@ -10,7 +10,7 @@ using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
 using System.Runtime.Serialization.Formatters;
 using System.Threading;
-using ObrerverPatern.Objects;
+using ObserverPatern.Objects;
 
 
 
@@ -93,7 +93,7 @@ namespace Server
             props["port"] = 9000;
 
             chan = new TcpChannel(props, null, provider);
-            ChannelServices.RegisterChannel(chan,false);
+            ChannelServices.RegisterChannel(chan,true);
             RemotingConfiguration.RegisterWellKnownServiceType(typeof(ServerObject),
                "Server", WellKnownObjectMode.Singleton);
         }

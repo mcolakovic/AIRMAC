@@ -233,7 +233,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.BackgroundImage = global::KorisnickiInterfejs.Properties.Resources.airmac_bcg_2;
+            this.BackgroundImage = global::KorisnickiInterfejs.Properties.Resources.airmac_bcg_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1025, 588);
             this.Controls.Add(this.menuStrip1);

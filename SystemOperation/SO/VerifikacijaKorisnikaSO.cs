@@ -24,7 +24,7 @@ namespace SystemOperation.SO
                 Result = (User)repository.SearchOne(user);
                 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da pronađe podatke o korisniku!");
             }

@@ -22,7 +22,7 @@ namespace SystemOperation.SO
             {
                 Result = repository.SearchAll(unservicableParts).OfType<UnserviceableParts>().ToList();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da pronađe neservisirane dijelove aviona!");
             }

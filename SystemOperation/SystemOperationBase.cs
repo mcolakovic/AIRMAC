@@ -22,7 +22,7 @@ namespace SystemOperation
                 Execute();
                 repository.Commit();
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 repository.Rollback();
                 throw;

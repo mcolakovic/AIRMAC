@@ -1,0 +1,8 @@
+C:\Users\matij\Desktop\DiplomskiRad\ObrerverPatern\obj\Debug\ObserverPatern.csproj.AssemblyReference.cache
+C:\Users\matij\Desktop\DiplomskiRad\ObrerverPatern\obj\Debug\ObserverPatern.csproj.CoreCompileInputs.cache
+C:\Users\matij\Desktop\DiplomskiRad\ObserverPatern\bin\Debug\ObserverPatern.dll
+C:\Users\matij\Desktop\DiplomskiRad\ObserverPatern\bin\Debug\ObserverPatern.pdb
+C:\Users\matij\Desktop\DiplomskiRad\ObserverPatern\obj\Debug\ObserverPatern.csproj.AssemblyReference.cache
+C:\Users\matij\Desktop\DiplomskiRad\ObserverPatern\obj\Debug\ObserverPatern.csproj.CoreCompileInputs.cache
+C:\Users\matij\Desktop\DiplomskiRad\ObserverPatern\obj\Debug\ObserverPatern.dll
+C:\Users\matij\Desktop\DiplomskiRad\ObserverPatern\obj\Debug\ObserverPatern.pdb

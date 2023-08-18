@@ -22,7 +22,7 @@ namespace SystemOperation.SO
             {
                 Result = (Aircraft)repository.SearchOne(aircraft);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da pronađe podatke o avionu!");
             }

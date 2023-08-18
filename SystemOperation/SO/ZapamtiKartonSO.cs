@@ -31,7 +31,7 @@ namespace SystemOperation.SO
                 }
                 Result = rotablePartsLog;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da sačuva karton dijela u evidenciju avio dijelova!");
             }

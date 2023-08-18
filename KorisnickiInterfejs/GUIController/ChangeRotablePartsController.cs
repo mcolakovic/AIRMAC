@@ -179,17 +179,6 @@ namespace KorisnickiInterfejs.GUIController
                         CyclesSinceOverhaul = String.IsNullOrEmpty(frmChangeRotableParts.TxtCyclesSinceOverhaul.Text) ? (decimal?)null : decimal.Parse(frmChangeRotableParts.TxtCyclesSinceOverhaul.Text),
                         DaysSinceOverhaul = String.IsNullOrEmpty(frmChangeRotableParts.TxtDaysSinceOverhaul.Text) ? (decimal?)null : decimal.Parse(frmChangeRotableParts.TxtDaysSinceOverhaul.Text),
                         ExpireAtDate = String.IsNullOrEmpty(frmChangeRotableParts.TxtStorageLimit.Text) ? (DateTime?)null : DateTime.Parse(frmChangeRotableParts.DpDateOfEntry.Text).AddDays(double.Parse(frmChangeRotableParts.TxtStorageLimit.Text)),
-                       // HoursOperationalLimit = decimal.Parse(frmChangeRotableParts.TxtHoursOperationalLimit.Text),
-                       // CyclesOperationalLimit = decimal.Parse(frmChangeRotableParts.TxtCyclesOperationalLimit.Text),
-                       // DaysOperationalLimit = decimal.Parse(frmChangeRotableParts.TxtDaysOperationalLimit.Text),
-                       // StorageLimit = decimal.Parse(frmChangeRotableParts.TxtStorageLimit.Text),
-                       // TimeSinceNew = decimal.Parse(frmChangeRotableParts.TxtTimeSinceNew.Text),
-                       // CyclesSinceNew = decimal.Parse(frmChangeRotableParts.TxtCyclesSinceNew.Text),
-                       // DaysSinceNew = decimal.Parse(frmChangeRotableParts.TxtDaysSinceNew.Text),
-                       // TimeSinceOverhaul = decimal.Parse(frmChangeRotableParts.TxtTimeSinceOverhaul.Text),
-                       // CyclesSinceOverhaul = decimal.Parse(frmChangeRotableParts.TxtCyclesSinceOverhaul.Text),
-                       // DaysSinceOverhaul = decimal.Parse(frmChangeRotableParts.TxtDaysSinceOverhaul.Text),
-                       // ExpireAtDate = DateTime.Parse(frmChangeRotableParts.DpDateOfEntry.Text).AddDays(double.Parse(frmChangeRotableParts.TxtStorageLimit.Text)),
                         TableNameIndex = 0,
                         ConditionIndex = 1
                     }

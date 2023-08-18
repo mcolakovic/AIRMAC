@@ -20,7 +20,7 @@ namespace SystemOperation.SO
             {
                 Result = repository.SearchAll(aircraft).OfType<Aircraft>().ToList();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da pronađe podatke o avionu i aerodromima!");
             }

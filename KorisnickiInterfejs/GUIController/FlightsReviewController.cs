@@ -13,7 +13,7 @@ using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
 using System.Runtime.Serialization.Formatters;
 using System.Collections;
-using ObrerverPatern.Objects;
+using ObserverPatern.Objects;
 using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
 
@@ -182,8 +182,27 @@ namespace KorisnickiInterfejs.GUIController
             try
             {
                 stavke = UcitajListuLetova();
-                flightsReview.DgvLogBook.DataSource = stavke;
-                if (isInit) MessageBox.Show("Sistem je našao sledeće realizovane letove!", "System Operation is successful", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
+                
+                if (GUISession.Session.Instance.CurrentStavke != null)
+                { 
+                    if (isEqual(GUISession.Session.Instance.CurrentStavke, stavke))
+                    {
+                        flightsReview.DgvLogBook.DataSource = stavke;
+                        GUISession.Session.Instance.CurrentStavke = stavke;
+                    }
+                    else
+                    {
+                        flightsReview.DgvLogBook.DataSource = stavke;
+                        if (isInit) MessageBox.Show("Sistem je našao sledeće realizovane letove!", "System Operation is successful", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
+                        GUISession.Session.Instance.CurrentStavke = stavke;
+                    }
+                }
+                else
+                {
+                    flightsReview.DgvLogBook.DataSource = stavke;
+                    if (isInit) MessageBox.Show("Sistem je našao sledeće realizovane letove!", "System Operation is successful", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
+                    GUISession.Session.Instance.CurrentStavke = stavke;
+                }
             }
             catch (ServerCommunicationException)
             {
@@ -193,10 +212,14 @@ namespace KorisnickiInterfejs.GUIController
             catch (SystemOperationException ex)
             {
                 throw new Exception(ex.Message);
-                //MessageBox.Show(ex.Message, "System Operation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
-                //flightsReview.Dispose();
-                //flightsReview = null;
             }
+        }
+
+        private bool isEqual(BindingList<LogBook> list1, BindingList<LogBook> list2)
+        {
+            if (list1.Count != list2.Count)
+                return false;
+            return list1.Select(item => item.ID_LogBook).SequenceEqual(list2.Select(item => item.ID_LogBook));
         }
 
         internal void UpdateFlight()
@@ -307,11 +330,11 @@ namespace KorisnickiInterfejs.GUIController
                 IDictionary props = new Hashtable();
                 props["port"] = 0;
                 chan = new TcpChannel(props, null, provider);
-                ChannelServices.RegisterChannel(chan,false);
+                ChannelServices.RegisterChannel(chan,true);
                 string url = String.Format("tcp://{0}:9000/Server", "127.0.0.1");
                 Server = (ServerObject)Activator.GetObject(typeof(ServerObject), url);
                 Client = new ClientObject();
-                Client.ServerRefresh += Client_ServerRefresh;
+                Client.ClientRefresh += Client_ClientRefresh;
                 Server.Attach(Client);
             }
         }
@@ -326,7 +349,7 @@ namespace KorisnickiInterfejs.GUIController
             }
         }
 
-        private void Client_ServerRefresh(object sender, EventArgs e)
+        private void Client_ClientRefresh(object sender, EventArgs e)
         {
             FormRefresh?.Invoke(this, EventArgs.Empty);
   

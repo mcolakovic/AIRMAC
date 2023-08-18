@@ -22,14 +22,16 @@ namespace KorisnickiInterfejs.Forms
 
         private void MainForm_Resize(object sender, EventArgs e)
         {
-            this.CenterToScreen();
+            int left = (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2;
+            int top = (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2;
+            this.Location = new Point(left, top);
 
-            Image backgroundImage = Properties.Resources.airmac_bcg;
-            float widthScale = (float)this.Width / 1920;
-            float heightScale = (float)this.Height / 1080;
+            Image backgroundImage = Properties.Resources.airmac_bcg_2;
+            float widthScale = (float)this.Width / Screen.PrimaryScreen.WorkingArea.Width;
+            float heightScale = (float)this.Height / Screen.PrimaryScreen.WorkingArea.Height;
 
-            int newWidth = (int)(1920 * widthScale);
-            int newHeight = (int)(1080 * heightScale);
+            int newWidth = (int)(Screen.PrimaryScreen.WorkingArea.Width * widthScale);
+            int newHeight = (int)(Screen.PrimaryScreen.WorkingArea.Height * heightScale);
 
             int x = (this.Width - newWidth) / 2;
             int y = (this.Height - newHeight) / 2;
@@ -40,6 +42,8 @@ namespace KorisnickiInterfejs.Forms
             graphics.DrawImage(backgroundImage, new Rectangle(x, y, newWidth, newHeight), new Rectangle(0, 0, backgroundImage.Width, backgroundImage.Height), GraphicsUnit.Pixel);
 
             this.BackgroundImage = scaledBackground;
+
+            CenterToScreen();
         }
 
         private void addFlightToLogBookToolStripMenuItem_Click(object sender, EventArgs e)

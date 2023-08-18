@@ -1,19 +1,19 @@
-﻿using ObrerverPatern.Interface;
+﻿using ObserverPatern.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ObrerverPatern.Objects
+namespace ObserverPatern.Objects
 {
     [Serializable]
     public class ClientObject : MarshalByRefObject, IObserver
     {
-        public event EventHandler ServerRefresh;
+        public event EventHandler ClientRefresh;
         public void Update()
         {
-            ServerRefresh?.Invoke(this, EventArgs.Empty); 
+            ClientRefresh?.Invoke(this, EventArgs.Empty); 
         }
     }
 }

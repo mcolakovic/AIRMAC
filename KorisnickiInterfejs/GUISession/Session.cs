@@ -1,6 +1,7 @@
 ﻿using Domain;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,11 +16,10 @@ namespace KorisnickiInterfejs.GUISession
         public string CurrentUnserviceablePartNumber { get; set; }
         public string CurrentUnserviceableSerialNumber { get; set; }
         public Decimal CurrentUnserviceableID_RotablePartsLog { get; set; }
-
         public string CurrentServiceablePartNumber { get; set; }
         public string CurrentServiceableSerialNumber { get; set; }
         public Decimal CurrentServiceableID_RotablePartsLog { get; set; }
-
+        public BindingList<LogBook> CurrentStavke { get; set; }
         private static Session instance;
         private Session()
         {

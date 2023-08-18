@@ -22,7 +22,7 @@ namespace SystemOperation.SO
             {
                 Result = repository.SearchAll(rotablePartHistory).OfType<RotablePartHistory>().ToList();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new SystemOperationException("Sistem ne može da pronađe podatke o istoriji dijela");
             }
