@@ -63,7 +63,7 @@ namespace Server
             }
             catch (SocketException)
             {
-                MessageBox.Show("Server ne moze da se pokrene!", "System Operation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
+                MessageBox.Show("Server je već pokrenut!", "System Operation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
             }
         }
 

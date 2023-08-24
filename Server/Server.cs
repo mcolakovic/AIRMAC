@@ -18,24 +18,25 @@ namespace Server
 {
     public class Server
     {
-            private Socket serverSocket;
-            private bool isRunning = false;
-            private List<ClientHandler> clients = new List<ClientHandler>();
-            public List<ClientHandler> Clients { get => clients; }
-            public event EventHandler ServerRefresh;
-            TcpChannel chan;
+        private Socket serverSocket;
+        private bool isRunning = false;
+        private bool closedTCP = false;
+        private List<ClientHandler> clients = new List<ClientHandler>();
+        public List<ClientHandler> Clients { get => clients; }
+        public event EventHandler ServerRefresh;
+        TcpChannel chan;
 
 
         public void Start()
+        {
+            if (!isRunning)
             {
-                if (!isRunning)
-                {
-                    serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                    serverSocket.Bind(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9999));
-                    serverSocket.Listen(5);
-                    isRunning = true;
-                }
+                serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                serverSocket.Bind(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9999));
+                serverSocket.Listen(5);
+                isRunning = true;
             }
+        }
 
             public void Stop()
             {
@@ -87,19 +88,27 @@ namespace Server
 
         public void start_Subject()
         {
-            BinaryServerFormatterSinkProvider provider = new BinaryServerFormatterSinkProvider();
-            provider.TypeFilterLevel = TypeFilterLevel.Full;
-            IDictionary props = new Hashtable();
-            props["port"] = 9000;
+            if (isRunning && !closedTCP)
+            {
+                BinaryServerFormatterSinkProvider provider = new BinaryServerFormatterSinkProvider();
+                provider.TypeFilterLevel = TypeFilterLevel.Full;
+                IDictionary props = new Hashtable();
+                props["port"] = 9000;
 
-            chan = new TcpChannel(props, null, provider);
-            ChannelServices.RegisterChannel(chan,true);
-            RemotingConfiguration.RegisterWellKnownServiceType(typeof(ServerObject),
-               "Server", WellKnownObjectMode.Singleton);
+                chan = new TcpChannel(props, null, provider);
+                ChannelServices.RegisterChannel(chan, true);
+                RemotingConfiguration.RegisterWellKnownServiceType(typeof(ServerObject),
+                   "Server", WellKnownObjectMode.Singleton);
+                closedTCP = true;
+            }
         }
         public void stop_Subject()
         {
-            ChannelServices.UnregisterChannel(chan);
+            if(!isRunning && closedTCP)
+            {
+                ChannelServices.UnregisterChannel(chan);
+                closedTCP = false;
+            }
          }
 
     }
