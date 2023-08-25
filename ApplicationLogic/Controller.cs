@@ -100,8 +100,6 @@ namespace ApplicationLogic
             return ((DodajDioNaAvionSO)so).Result;
         }
 
-        
-
         public object NadjiDioAvion(RotablePartsLog requestObject)
         {
             SystemOperationBase so = new NadjiDioAvionSO(requestObject);
